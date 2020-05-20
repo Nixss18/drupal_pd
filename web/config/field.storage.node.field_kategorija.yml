@@ -1,0 +1,20 @@
+uuid: 8b256ff3-535c-498c-a625-59a0eb13dc7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_kategorija
+field_name: field_kategorija
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
