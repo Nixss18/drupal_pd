@@ -55,7 +55,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_lidzigi_produkti:
-    weight: 13
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -65,11 +65,11 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_pieejamiba_noliktava:
-    weight: 12
+    type: options_select
+    weight: 13
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_produkta_attels:
     weight: 10
     settings:

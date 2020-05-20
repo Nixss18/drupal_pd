@@ -1,8 +1,9 @@
-uuid: 534b9a20-e969-4f86-86c5-971d9d816952
+uuid: 7c7e5d4f-3583-444b-aa32-057b63b4deb3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.produkts.body
     - field.field.node.produkts.field_cena
     - field.field.node.produkts.field_kategorija
@@ -13,12 +14,13 @@ dependencies:
     - node.type.produkts
   module:
     - image
+    - options
     - text
     - user
-id: node.produkts.default
+id: node.produkts.full
 targetEntityType: node
 bundle: produkts
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -37,6 +39,29 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
+    region: content
+  field_kategorija:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lidzigi_produkti:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_pieejamiba_noliktava:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_produkta_attels:
     weight: 2
@@ -60,7 +85,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_kategorija: true
-  field_lidzigi_produkti: true
-  field_pieejamiba_noliktava: true
+hidden: {  }
