@@ -64,12 +64,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_pieejamiba_noliktava:
-    type: options_select
-    weight: 13
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_produkta_attels:
     weight: 10
     settings:
@@ -131,4 +125,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_pieejamiba_noliktava: true
